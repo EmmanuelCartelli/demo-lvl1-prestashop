@@ -6,6 +6,12 @@ body{
     margin: 0;
     overflow-y: hidden;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
 header{
     background: black;
     padding: 0.5rem 2rem;
@@ -43,7 +49,7 @@ nav img{
     width: 7rem;
 }
 nav a{
-    border-radius: 100rem;
+    border-radius: 0.15rem;
     padding: 0.25rem 1.15rem;
     background-color: #d33333;
 }
@@ -66,7 +72,7 @@ nav a{
 .loader div span{
     width: 1rem;
     height: 1rem;
-    border-radius: 100rem;
+    border-radius: 0.15rem;
     display: block;
     margin: 1rem;
 }
@@ -92,7 +98,7 @@ nav a{
     width: 20rem;
 }
 .switch{
-    border-radius: 100rem;
+    border-radius: 0.15rem;
 }
 
 .floatelement{
@@ -131,7 +137,7 @@ nav a{
         bottom: 2rem;
         right: 2rem;
         color: white;
-        border-radius: 100rem;
+        border-radius: 0.05rem;
         background-color: #d33333;
         text-transform: uppercase;
         padding: 0.5rem 1rem;
