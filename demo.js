@@ -21,7 +21,7 @@ function getName(parametres){
     let nameWP = "wordpress";
     let namePS = "prestashop";
         if(parametres == nameWP){
-            buttonSwitch.setAttribute("style", "background:#ff0075;")    
+            buttonSwitch.setAttribute("style", "background:#ff0075;")
             document.querySelector("iframe").setAttribute("src", "https://webdemo.lvl1.fr/");
             buttonSwitch.textContent = "Demo Prestashop";
             borderColor.setAttribute("style", "border-bottom: solid 5px #ff0075");
@@ -36,7 +36,12 @@ function getName(parametres){
 
 function main(){
     let nameCMS = urlID();
-    getName(nameCMS);
+    if(nameCMS == null){
+        nameCMS = "wordpress";
+        getName(nameCMS);
+    }else{
+        getName(nameCMS);
+    }
     loader();
     buttonSwitch.addEventListener("click", function(){
         loader();
@@ -58,7 +63,9 @@ function main(){
             },1500)
             nameCMS = "wordpress";
         }
+        setTimeout(()=> console.clear(), 5000);
     })
+
 }
 
 main();
