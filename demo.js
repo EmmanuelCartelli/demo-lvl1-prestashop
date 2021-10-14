@@ -1,5 +1,4 @@
 let buttonSwitch = document.querySelector(".switch");
-let logoWP = ""
 document.querySelector("img").setAttribute("src", "https://www.lvl1.fr/wp-content/uploads/2021/03/site-65.png");
 document.querySelector(".loader img").setAttribute("src", "https://www.lvl1.fr/wp-content/uploads/2021/03/Logo-V3-noir.png");
 let borderColor = document.querySelector("header");
