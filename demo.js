@@ -2,6 +2,9 @@ let buttonSwitch = document.querySelector(".switch");
 document.querySelector("img").setAttribute("src", "https://www.lvl1.fr/wp-content/uploads/2021/03/site-65.png");
 document.querySelector(".loader img").setAttribute("src", "https://www.lvl1.fr/wp-content/uploads/2021/03/Logo-V3-noir.png");
 let borderColor = document.querySelector("header");
+let wpIcon = '<i class="fab fa-wordpress-simple"></i>';
+let prestaIcon = '<img src="prestashop.png" alt="icon prestashop">';
+let iconContainer = document.querySelector(".icon");
 
 function loader(){
     setTimeout(function(){
@@ -24,12 +27,18 @@ function getName(parametres){
             document.querySelector("iframe").setAttribute("src", "https://webdemo.lvl1.fr/");
             buttonSwitch.textContent = "Demo Prestashop";
             borderColor.setAttribute("style", "border-bottom: solid 5px #ff0075");
+            iconContainer.innerHTML = prestaIcon;
+            buttonSwitch.appendChild(iconContainer);
+
         }
         else if(parametres == namePS){
             buttonSwitch.setAttribute("style", "background: linear-gradient(45deg, #0073aa, #0085ba);") 
             document.querySelector("iframe").setAttribute("src", "https://prestademo.lvl1.fr/");
             buttonSwitch.textContent = "Demo Wordpress";
             borderColor.setAttribute("style", "border-bottom: solid 5px #0073aa");
+            iconContainer.innerHTML = wpIcon;
+            buttonSwitch.appendChild(iconContainer);
+
         }
 }
 
@@ -50,6 +59,9 @@ function main(){
                 buttonSwitch.textContent = "Demo Wordpress";  
                 buttonSwitch.setAttribute("style", "background: linear-gradient(45deg, #0073aa, #0085ba);")
                 borderColor.setAttribute("style", "border-bottom: solid 5px #0073aa");
+                iconContainer.innerHTML = wpIcon;
+                buttonSwitch.appendChild(iconContainer);
+
             },1500)
             nameCMS = "prestashop";
         }
@@ -58,7 +70,10 @@ function main(){
             setTimeout(function(){
                 buttonSwitch.textContent = "Demo Prestashop";
                 buttonSwitch.setAttribute("style", "background:#ff0075;")
-                borderColor.setAttribute("style", "border-bottom: solid 5px #ff0075");    
+                borderColor.setAttribute("style", "border-bottom: solid 5px #ff0075");
+                iconContainer.innerHTML = prestaIcon;    
+                buttonSwitch.appendChild(iconContainer);
+
             },1500)
             nameCMS = "wordpress";
         }

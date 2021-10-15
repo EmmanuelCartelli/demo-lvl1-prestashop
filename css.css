@@ -105,6 +105,22 @@ nav a{
     display: none;
 }
 
+.switch {display: grid;grid-template-columns: 1fr auto;align-items: center;}
+
+.icon {
+    width: 2rem;
+    display: flex;
+    grid-area: 1;
+    margin-right: .75rem;
+}
+
+.icon img {
+    width: 100%;
+}
+i.fab.fa-wordpress-simple {
+    font-size: 2rem;
+}
+
 @keyframes loading{
     50%{
         transform: translateY(2rem);
