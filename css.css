@@ -120,6 +120,18 @@ nav a{
 i.fab.fa-wordpress-simple {
     font-size: 2rem;
 }
+.fa-paper-plane{
+    margin-left: 0.25rem;
+    transform: rotate(45deg);
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.contact > a:hover > i{
+    transform: rotate(0deg);
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
 
 @keyframes loading{
     50%{
