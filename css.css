@@ -50,6 +50,7 @@ nav > div:nth-child(2)>div, nav > div:nth-child(3)>div{
 nav > div:nth-child(4)>div{
     padding: 0.25rem 1.15rem;
     cursor: pointer;
+    font-size: 700;
 }
 iframe {
     height: 95vh;
@@ -125,6 +126,7 @@ nav a{
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    font-weight: 700;
 }
 
 .icon, .iconSwap {
